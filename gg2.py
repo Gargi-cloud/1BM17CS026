@@ -1,8 +1,4 @@
-a=0
-b=1
-n=int(input("enter a number"))
-fib=[a,b]
-while b<n:
- a,b=b,a+b
- fib.append(b)
-print(fib)
+li=[x for x in input("enter the string").split()]
+print(li[::-1 ])
+for i in reversed(range(len(li))):
+    print(li[i][::-1],end= " ")
